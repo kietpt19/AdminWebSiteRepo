@@ -1,0 +1,99 @@
+SET SQL_SAFE_UPDATES = 0;
+--
+--INSERT INTO banner (image, name_banner) VALUES ('http://lveducation.vn/images/headers/1.jpg', 'Hình 1');
+--INSERT INTO banner (image, name_banner) VALUES ('http://lveducation.vn/images/headers/2.jpg', 'Hình 2');
+--INSERT INTO banner (image, name_banner) VALUES ('http://lveducation.vn/images/headers/3.jpg', 'Hình 3');
+--INSERT INTO banner (image, name_banner) VALUES ('http://lveducation.vn/images/headers/4.jpg', 'Hình 4');
+--
+--INSERT INTO groub (name_groub) VALUES ('Admin');
+--INSERT INTO groub (name_groub) VALUES ('Employee');
+--INSERT INTO groub (name_groub) VALUES ('User');
+--
+--INSERT INTO form (code_form, name_form) VALUES ('B', 'Banner');
+--INSERT INTO form (code_form, name_form) VALUES ('C', 'Country');
+--INSERT INTO form (code_form, name_form) VALUES ('E', 'Employee');
+--INSERT INTO form (code_form, name_form) VALUES ('F', 'Form');
+--INSERT INTO form (code_form, name_form) VALUES ('G', 'Groub');
+--INSERT INTO form (code_form, name_form) VALUES ('Gu', 'Guest');
+--INSERT INTO form (code_form, name_form) VALUES ('P', 'Post');
+--INSERT INTO form (code_form, name_form) VALUES ('R', 'Role');
+--INSERT INTO form (code_form, name_form) VALUES ('S', 'Subject');
+--INSERT INTO form (code_form, name_form) VALUES ('I', 'Introduce');
+--INSERT INTO form (code_form, name_form) VALUES ('Ev', 'Event');
+--INSERT INTO form (code_form, name_form) VALUES ('O', 'OtherInfo');
+--
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('1', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('2', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('3', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('4', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('5', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('6', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('7', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('8', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('9', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('10', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('11', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('12', '1');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('7', '2');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('10', '2');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('11', '2');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('1', '3');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('2', '3');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('3', '3');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('6', '3');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('7', '3');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('9', '3');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('10', '3');
+--INSERT INTO role (form_id_form, groub_id_groub) VALUES ('11', '3');
+--
+--INSERT INTO employee (employee_address, employee_code, 
+--employee_email, employee_name, employee_phone, password, username, groub_id_groub) 
+--VALUES ('Không có', '0003', 'user@gmail.com', 'User', 
+--'0000000003', '$2a$10$McpaW39gAoJwECs7QWttNuNCol9WGD7F1FnzjYj5sx3DgfN3SQwSe', 'user', '3');
+--INSERT INTO employee (employee_address, employee_code, 
+--employee_email, employee_name, employee_phone, password, username, groub_id_groub) 
+--VALUES ('Không có', '0001', 'admin@gmail.com', 'Admin', 
+--'0000000001', '$2a$10$McpaW39gAoJwECs7QWttNuNCol9WGD7F1FnzjYj5sx3DgfN3SQwSe', 'admin', '1');
+--INSERT INTO employee (employee_address, employee_code, 
+--employee_email, employee_name, employee_phone, password, username, groub_id_groub) 
+--VALUES ('Tòa nhà Fideco, 28 Phùng Khắc Khoan, Q1', '00002', 'admin@lveducation.vn', 'Như Quỳnh', 
+--'01239588324', '$2a$10$McpaW39gAoJwECs7QWttNuNCol9WGD7F1FnzjYj5sx3DgfN3SQwSe', 'employee', '2');
+--
+--INSERT INTO country (name_country) VALUES ('Pháp');
+--INSERT INTO country (name_country) VALUES ('Nhật Bản');
+--
+--INSERT INTO subject (name_subject, country_id_country) VALUES ('Cẩm Nang du học Pháp', '1');
+--INSERT INTO subject (name_subject, country_id_country) VALUES ('Du học tự túc tại Nhật Bản', '2');
+--INSERT INTO subject (name_subject, country_id_country) VALUES ('Cẩm Nang du học Nhật Bản', '2');
+--
+--INSERT INTO introduce (content, title_introduce, employee_id_employee) 
+--VALUES ('LVeducation
+
+--Là một thành viên trẻ, năng động của LVgroup. LVeducation cung cấp các dịch vụ ứng dụng công nghệ thông tin trong lĩnh vực giáo
+--
+--dục và đào tạo nhằm giúp người dùng nâng cao kiến thức và kỹ năng thông qua các hoạt động mang tính tương tác cao trên nền tảng
+--
+--web. LVeducation đang thử nghiệm một số dự án nhằm biến công nghệ thông tin thành một công cụ hữu ích hỗ trợ hoạt động học tập.
+--
+--Hiện nay, LVeducation đang tập trung vào một số dịch vụ sau:
+--
+--· Dịch vụ cung cấp học tiếng Pháp trực tuyến miễn phí tại www.lefrancais.edu.vn
+--
+--· Dịch vụ tư vấn du học Nhật Bản. Trong thời gian sắp tới sẽ triển khai du học Pháp và Hàn Quốc
+--
+--LVeducation is a young member of LVgroup. LVeducation is providing applications for education and training on information
+--
+--technology platform in order to help Vietnamese enhancing their skills and knowledge. At the moment, LVeducation is focusing on:
+--
+--· Free French elearning for everyone who wants to learn French as a second language at www.lefrancais.edu.vn
+--
+--· Oversea study services in Japan, French and Korea', 
+--'Giới thiệu', '2');
+--
+--
+--
+--
+--
+--
+--
+--
